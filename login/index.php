@@ -1,6 +1,10 @@
 <?php
   require_once "../connect.php";
   session_start();
+  if (isset($_GET['logout'])) {
+    unset($_SESSION['userid']);
+    session_destroy();
+  }
   if (!empty($_POST)&&isset($_POST['send'])){
     $login = $_POST['login'];
     $password = $_POST['password'];

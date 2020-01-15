@@ -11,7 +11,7 @@
 <?php 
   session_start();
   if (!isset($_SESSION['userid'])) {
-    echo "Неавторизовано";
+    echo "Не авторизовано";
     // header('Location:'.$login_page);
   }
     echo "авторизовано";
