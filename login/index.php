@@ -30,18 +30,6 @@
     } else {
       $error = 'Ошибка доступа к бд';
     }
-    // $index = in_list($data, $login);
-    // if (is_numeric($index)) {
-    //   if ($data[$index][1] == $password) {
-    //     $_SESSION['userid'] = $data[$index][2];
-    //     echo "авторизовано";
-    //     go_to_main(MAIN_PAGE_URI);
-    //   } else {
-    //     echo "неверный пароль";
-    //   }
-    // } else {
-    //   $error = 'Пользователя с таким именем не существует';
-    // }
 
     if ($error) {
       echo "Ошибка: $error";
